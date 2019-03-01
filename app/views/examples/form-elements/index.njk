@@ -25,6 +25,7 @@
     <li><a href="#radio-stacked" class="govuk-link">Fieldset, legend and radio buttons (stacked)</a></li>
     <li><a href="#radio-inline" class="govuk-link">Fieldset, legend and radio buttons (inline - yes or no)</a></li>
     <li><a href="#checkboxes-stacked" class="govuk-link">Fieldset, legend and checkboxes (stacked)</a></li>
+    <li><a href="#checkboxes-subheadings" class="govuk-link">Fieldset, legend and checkboxes with subheadings (stacked)</a></li>
     <li><a href="#date" class="govuk-link">Date pattern</a></li>
     <li><a href="#select" class="govuk-link">Select box</a></li>
     <li><a href="#file" class="govuk-link">File upload</a></li>
@@ -115,6 +116,89 @@
         {
           "value": "waste-other",
           "text": "Waste from other"
+        }
+      ]
+    }) }}
+
+    <span id="checkboxes-subheadings"></span>
+    {{ govukCheckboxes({
+      "fieldset": {
+        "legend": {
+          "text": "Which options would you like?",
+          "classes": "govuk-fieldset__legend--l"
+        }
+      },
+      "hint": {
+        "text": 'Select all that apply'
+      },
+      "idPrefix": "checkboxes-stacked",
+      "name": "checkboxes-stacked",
+      "sections": [
+        {
+          "fieldset": {
+            "legend": {
+              "text": "Section One",
+              "classes": "govuk-fieldset__legend--m"
+            }
+          },
+          "items": [
+            {
+              "value": "option-one",
+              "text": "Option One"
+            },
+            {
+              "value": "option-two",
+              "text": "Option Two"
+            },
+            {
+              "value": "option-three",
+              "text": "Option Three"
+            }
+          ]
+        },
+        {
+          "fieldset": {
+            "legend": {
+              "text": "Section Two",
+              "classes": "govuk-fieldset__legend--m"
+            }
+          },
+          "items": [
+            {
+              "value": "option-four",
+              "text": "Option Four"
+            },
+            {
+              "value": "option-five",
+              "text": "Option Five"
+            },
+            {
+              "value": "option-six",
+              "text": "Option Six"
+            }
+          ]
+        },
+        {
+          "fieldset": {
+            "legend": {
+              "text": "Section Three",
+              "classes": "govuk-fieldset__legend--m"
+            }
+          },
+          "items": [
+            {
+              "value": "option-seven",
+              "text": "Option Seven"
+            },
+            {
+              "value": "option-eight",
+              "text": "Option Eight"
+            },
+            {
+              "value": "option-nine",
+              "text": "Option Nine"
+            }
+          ]
         }
       ]
     }) }}
